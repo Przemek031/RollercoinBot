@@ -10,7 +10,7 @@ def mouse_click(x, y, wait=0.2):
     time.sleep(wait)
 
 def coinclick(a):
-    print("START GRY")
+    print("START GAME")
     while a==1:
         pic = pyautogui.screenshot(region=(530, 430, 828, 417))
         width, height = pic.size
@@ -22,31 +22,36 @@ def coinclick(a):
                     a=0
                     break
 
-                # blue coin
+                # dash coin
                 if b == 183 and r == 0:
                     mouse_click(x + 530, y + 440, wait=0)
                     break
 
-                # yellow coin
+                # doge coin
                 if b == 64 and r == 200:
                     mouse_click(x + 530, y + 440, wait=0)
                     break
 
-                # orange coin
+                # btc coin
                 if b == 33 and r == 231:
                     mouse_click(x + 530, y + 440, wait=0)
                     break
 
-                # grey coin
+                # lite coin
                 if b == 230 and r == 230:
                     mouse_click(x + 535, y + 440, wait=0)
                     break
-    print("KONIEC GRY")
+                
+                # eth coin
+                if b == 207 and r == 66 and g==105:
+                    mouse_click(x + 535, y + 440, wait=0)
+                    break
+    print("END GAME")
     start()
 
 
 def start():
-    print("Page UP by rozpocząć,naciśnij dopiero gdy będzie odliczanie")
+    print("Press PAGE UP, when the countdown is displayed")
     keyboard.wait("page up")
     a=1
     coinclick(a)
