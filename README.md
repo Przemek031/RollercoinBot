@@ -23,4 +23,4 @@ If problems persist, feel free to contact me through GitHub.
 
 ## Thank You for Using RollercoinBot-AutoPlay! ❤️
 
-We appreciate you choosing this bot to enhance your Rollercoin gaming experience. If you enjoy using the bot, consider sharing your feedback or contributing to its development.
+I appreciate you choosing this bot to enhance your Rollercoin gaming experience. If you enjoy using the bot, consider sharing your feedback or contributing to its development.
