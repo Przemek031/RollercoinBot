@@ -4,4 +4,4 @@ Bot for https://rollercoin.com/, more specifically for the "coinclick" and "Hams
 * resolution 1920x1080
 * Google Chrome
 >if you have problems contact me
-Thank u for using <3
+###Thank u for using <3
