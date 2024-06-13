@@ -12,7 +12,7 @@ def mouse_click(x, y, wait=0.2):
 def coinclick(a):
     print("START GAME")
     while a==1:
-        pic = pyautogui.screenshot(region=(530, 430, 828, 417))
+        pic = pyautogui.screenshot(region=(575, 390, 828, 417))
         width, height = pic.size
         for x in range(0, width, 5):
             for y in range(0, height, 5):
@@ -24,27 +24,27 @@ def coinclick(a):
 
                 # dash coin
                 if b == 183 and r == 0:
-                    mouse_click(x + 530, y + 440, wait=0)
+                    mouse_click(x + 575, y + 390, wait=0)
                     break
 
                 # doge coin
                 if b == 64 and r == 200:
-                    mouse_click(x + 530, y + 440, wait=0)
+                    mouse_click(x + 575, y + 390, wait=0)
                     break
 
                 # btc coin
                 if b == 33 and r == 231:
-                    mouse_click(x + 530, y + 440, wait=0)
+                    mouse_click(x + 575, y + 390, wait=0)
                     break
 
                 # lite coin
                 if b == 230 and r == 230:
-                    mouse_click(x + 535, y + 440, wait=0)
+                    mouse_click(x + 580, y + 390, wait=0)
                     break
                 
                 # eth coin
                 if b == 207 and r == 66 and g==105:
-                    mouse_click(x + 535, y + 440, wait=0)
+                    mouse_click(x + 580, y + 390, wait=0)
                     break
     print("END GAME")
     start()
