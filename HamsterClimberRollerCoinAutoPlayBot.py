@@ -2,7 +2,7 @@ import pyautogui
 import time
 import keyboard
 
-def space_click(wait=0.2):
+def space_click(wait=0.0):
     pyautogui.press('space')
     time.sleep(wait)
 
@@ -19,8 +19,8 @@ def hamsterClimber(a):
         width, height = pic.size
         found = False
         
-        for x in range(0, width, 5):
-            for y in range(0, height, 5):
+        for x in range(0, width, 15):
+            for y in range(0, height, 15):
                 r, g, b = pic.getpixel((x, y))
 
                 if r == 3 and g == 225 and b == 228:
@@ -28,13 +28,11 @@ def hamsterClimber(a):
                     break
 
                 if is_color_in_range(target_color, (r, g, b), tolerance):
-                    space_click(wait=1)
+                    space_click()
                     found = True
                     break
             if found:
                 break
-
-        time.sleep(0.05)
 
     print("END GAME")
     start()
